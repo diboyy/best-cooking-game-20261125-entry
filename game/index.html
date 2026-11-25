@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="data:,">
+<title>Nasi Goreng Rush — a wok-station arcade cook</title>
+<style>
+  html, body { margin: 0; padding: 0; background: #160c07; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: "Trebuchet MS", Verdana, sans-serif; }
+  #wrap { text-align: center; }
+  canvas { display: block; width: min(1280px, 100vw); height: auto; image-rendering: auto;
+           box-shadow: 0 0 60px rgba(255, 140, 46, 0.25); border-radius: 6px; }
+  #help { color: #c9a37e; font-size: 13px; margin-top: 10px; line-height: 1.5; }
+  #help b { color: #ffd9a0; }
+</style>
+</head>
+<body>
+<div id="wrap">
+  <canvas id="game" width="1280" height="720"></canvas>
+  <div id="help">
+    <b>How to play:</b> [1] rice &nbsp; [2–6] ingredients &nbsp; [W] wok &nbsp; [P] plate &nbsp; [T] trash &nbsp; [M] mute &nbsp; [Enter] start / restart<br>
+    Take rice, chop in the ingredients, fry in the wok — stop in the green band — plate it, and serve the matching ticket before its timer runs out.
+  </div>
+</div>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
